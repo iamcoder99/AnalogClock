@@ -1,0 +1,35 @@
+package com.aruntech999.schoolmanagement.entity;
+public class Student extends Person{
+	int rollNo;
+	int standard;
+	String areaOfInterest;
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public int getStandard() {
+		return standard;
+	}
+	public void setStandard(int standard) {
+		this.standard = standard;
+	}
+	public String getAreaOfInterest() {
+		return areaOfInterest;
+	}
+	public void setAreaOfInterest(String areaOfInterest) {
+		this.areaOfInterest = areaOfInterest;
+	}
+	@Override
+	public void work() {
+		 System.out.println("Works as Student..");	
+	}
+	public Student(String name, int age, String address, int rollNo, int standard, String areaOfInterest) {
+		super(name, age, address);
+		this.rollNo = rollNo;
+		this.standard = standard;
+		this.areaOfInterest = areaOfInterest;
+	}
+	 
+}
